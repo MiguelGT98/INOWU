@@ -1,0 +1,606 @@
+h1,
+h2,
+h3,
+p,
+a,
+a:hover {
+    font-family: 'Comfortaa', sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+#landing {
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.burger {
+    display: none;
+}
+
+#landing {
+    height: 100%;
+    width: 100vw;
+    background-image: linear-gradient(30deg, #003a54, #00e6be);
+}
+
+.logo {
+    margin-top: 20px;
+    margin-left: calc(20px + 1vw);
+    width: 22vw;
+    float: left;
+    z-index: 100;
+    position: absolute;
+}
+
+.top {
+    position: absolute;
+    width: 35vw;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 0;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.menu a {
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 18px;
+    margin-top: 60px;
+    width: 16.25vw;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu a:hover {
+    opacity: .5;
+    font-size: 19px;
+}
+
+.menu a:hover .detail {
+    left: 10%;
+    width: 80%;
+}
+
+.menu a.current {
+    color: darkcyan !important;
+}
+
+.menu a.current .detail {
+    left: 10%;
+    width: 80%;
+}
+
+.detail {
+    background-color: darkcyan;
+    position: absolute;
+    bottom: -10px;
+    left: 8.125vw;
+    height: 2px;
+    width: 0%;
+    transition: all 0.2s ease-in-out;
+}
+
+#promo-text {
+    position: absolute;
+    left: 20px;
+    top: 33.33vh;
+    width: 35vw;
+    min-width: 500px;
+
+}
+
+#promo-text h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 700;
+
+}
+
+
+h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 53px;
+}
+
+#promo-text p.spacing {
+    letter-spacing: 2px;
+
+}
+
+#promo-text p {
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+#promo-text .clear-button {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 12.5%;
+    width: 75%;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    display: block;
+    color: white;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+#promo-text .clear-button:hover {
+    background-color: white;
+    color: #265C68;
+
+}
+
+.devices {
+    position: absolute;
+    width: 65%;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    margin: 80px 0 40px 0;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 60px;
+    width: 100%;
+    display: inline-block;
+
+}
+
+
+.col img {
+    width: 75px;
+    display: block;
+    margin: 0 auto;
+}
+
+.col p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    color: #666666;
+}
+
+.about,
+.extra {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.extra {
+    font-weight: 700;
+}
+
+.button {
+    margin: 20px auto 0 auto;
+    width: 75%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-image: linear-gradient(30deg, #00e6be, #0093c4);
+    display: block;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    opacity: .5;
+
+}
+
+#team .col img {
+    height: 120px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#team .col p {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#team,
+#pricing {
+    margin: 0 auto;
+    display: block;
+}
+
+.is-active {
+    transition: all 0.2s ease-in-out;
+}
+
+header.is-active {
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 0.0625em 0.5em rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+header.is-active img {
+    height: 45px;
+    margin: 7.5px 0 0 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+header.is-active a {
+    color: #333333;
+    margin-top: 20px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 75%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 0px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: .5;
+    /* Firefox */
+}
+
+input.text {
+    line-height: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #BBBBBB;
+    transition: all 0.2s ease-in-out;
+}
+
+textarea {
+    margin-top: 60px;
+    border: 1px solid #BBBBBB;
+    padding: 15px;
+    border-radius: 20px
+}
+
+input.text:focus {
+    border-bottom: 1px solid #333333;
+}
+
+input.text:focus {
+    border-bottom: 1px solid #333333;
+}
+
+a:hover {
+    color: darkcyan !important;
+}
+
+
+.services {
+    margin-bottom: 50px;
+}
+
+
+
+#pricing .col h3{
+    text-align: left;
+}
+
+.option .col {
+    margin: 20px;
+    min-width: 130px;
+    max-width: 130px;
+    height: 130px;
+    margin: 20px 15px;
+}
+
+.option .col p{
+    font-size: 14px !important;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.option a.col {
+    border: 2px solid black;
+    border-radius: 15px;
+    transition: all .3s ease-in;
+}
+
+.option .col p{
+    text-align: left;
+}
+
+.option a.col.chosen{
+    background-color: #1B465A;
+    border: 2px solid #1B465A;
+}
+
+.option a.col:hover{
+    border: 2px solid #1B465A;
+}
+
+a.chosen p{
+    color: white;
+}
+
+.price{
+    color: #1B465A;
+    font-weight: 700;
+    background-color: white;
+    margin: 0;
+
+}
+
+
+.subtitle{
+    margin-bottom: 20px;
+}
+.title{
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black !important;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: #CCCCCC;
+}
+
+
+.w{
+    font-weight: 300 !important;
+    color:rgba(0,0,0,.2) !important;
+}
+.isAn,.end{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        width: 100vw;
+    }
+
+
+    header,
+    header.is-active {
+        position: fixed;
+        background-color: white;
+        top: 0 !important;
+        width: 100vw;
+        height: 60px;
+        box-shadow: 0 0.0625em 0.5em rgba(0, 0, 0, 0.3);
+        z-index: 100;
+    }
+
+    .logo {
+        margin: 14px;
+        width: 100px;
+        position: relative;
+    }
+
+    .burger {
+        display: block;
+        position: absolute;
+        margin: 0;
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        top: 15px;
+
+    }
+
+    .menu {
+        left: 0;
+        top: 60px;
+        display: none;
+        position: fixed;
+        width: 100vw;
+        background-image: linear-gradient(30deg, rgba(0, 58, 84, .9), rgba(0, 230, 190, .9));
+        transition: none !important;
+
+    }
+
+    .top {
+        display: none;
+    }
+
+
+    .menu a {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        line-height: calc(25vh - 15px);
+        transition: none !important;
+
+    }
+
+
+    #promo-text .clear-button,
+    .button {
+        margin: 20px auto 0 auto;
+        font-size: 14px;
+        line-height: 36px;
+    }
+
+    #promo-text {
+        position: inherit;
+        left: auto;
+        top: 20vh;
+        width: 90%;
+        min-width: 0;
+        margin: 0 auto;
+        padding-top: 80px;
+    }
+
+    .projects {
+        width: 100%;
+        margin: 0;
+    }
+
+    .devices {
+        width: 80%;
+        left: 10%;
+    }
+
+    #promo-text h1 {
+        font-size: 35px;
+        margin: 30px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 80px 0 20px 0;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    .spacing {
+        margin-top: -10px;
+    }
+
+    p {
+        font-size: 15px !important;
+        line-height: 30px !important
+    }
+
+    #promo-text p {
+        font-size: 18px;
+    }
+
+    .services .col {
+        padding: 0;
+    }
+
+    .services .col img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .services .col p {
+        display: none;
+    }
+
+    #team .row .col {
+        width: 100%;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    #team .row .col img {
+        width: 25%;
+        max-width: 80px;
+        height: auto;
+        float: left;
+        margin: 0;
+    }
+
+    #team .row .col h3 {
+        margin: 0;
+        margin-left: 5%;
+        width: 70%;
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        float: left;
+    }
+
+    #team .row .col p {
+        margin: 0;
+        margin-left: 5%;
+        width: 70%;
+        display: block;
+        text-align: left;
+        font-size: 16px;
+        line-height: 22px;
+        float: left;
+    }
+
+
+
+}
