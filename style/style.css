@@ -404,9 +404,14 @@ a.chosen p{
     font-weight: 300 !important;
     color:rgba(0,0,0,.2) !important;
 }
-.isAn,.end{
+.isAn,.end, .isAn span, .invisible{
     display: none;
 }
+
+.isAn .button{
+    color: white !important;
+}
+
 
 
 

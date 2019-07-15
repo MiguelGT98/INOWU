@@ -1,27 +1,5 @@
 $(document).ready(function () {
     AOS.init();
-
-
-    //        alert($('.chosen').text())
-
-    //Plataforma
-    $('.showEnd').on('click', function (e) {
-        $(".end").css("display", "inherit");
-
-    });
-    
-    $('.platform a.col').on('click', function (e) {
-        if ($(this).hasClass('chosen')) {
-
-        } else {
-            $('.platform a.col').removeClass('chosen');
-            $(this).addClass('chosen');
-            $(".isAn").css("display", "none");
-            $(".end").css("display", "none");
-            $("." + $(this).text()).css("display", "flex");
-        }
-
-    })
     row('.sub a.col')
     row('.sub2 a.col')
     box('.sub3 a.col')
@@ -31,11 +9,58 @@ $(document).ready(function () {
     row('.sub7 a.col')
     row('.sub8 a.col')
     row('.sub9 a.col')
+    
+    end('.finalApp',7)
+    end('.finalWeb',7)
+    end('.finalVideogame',6)
+
+    $('.platform a.col').on('click', function (e) {
+        if ($(this).hasClass('chosen')) {} else {
+            $('.platform a.col').removeClass('chosen');
+            $(this).addClass('chosen');
+            $("#error").css("display", "none");
+            $(".isAn").css("display", "none");
+            $(".end").css("display", "none");
+            $("." + $(this).text()).css("display", "flex");
+        }
+
+    })
+
+
+    function end(type, questions) {
+        $('a' + type).on('click', function (e) {
+            if ($('.chosen').length > questions) {
+
+                $(".end").css("display", "inherit");
+                var stringPrice = $(".chosen span").text();
+                var tempString = "";
+                var price = 0;
+                for (var i = 0; i < stringPrice.length; i++) {
+                    if (stringPrice[i] == "+") {
+                        price = price + parseInt(tempString)
+                        tempString = ""
+                    } else {
+                        tempString = tempString + stringPrice[i];
+                    }
+                }
+
+                var answersString = $('.chosen p').text()
+                document.getElementById("price").innerHTML = price/20 + " DLL's"
+                $("#answers").val(answersString)
+                $("#price2").val(price/20)
+
+            } else {
+                console.log($('.chosen').length)
+                alert("There are some fields missing")
+            }
+
+        });
+    }
+
 
     function row(options) {
         $(options).on('click', function (e) {
-            if ($(this).hasClass('chosen')) {
-            } else {
+            if ($(this).hasClass('chosen')) {} else {
                 $(options).removeClass('chosen');
                 $(this).addClass('chosen');
             }
