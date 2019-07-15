@@ -385,7 +385,7 @@ a.col:hover img {
         width: 100%;
         position: relative;
         margin: 0;
-        line-height: calc(25vh - 15px);
+        line-height: calc(20vh - 12px);
         transition: none !important;
 
     }
