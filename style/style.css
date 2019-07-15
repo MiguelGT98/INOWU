@@ -390,6 +390,7 @@ a.chosen p{
     font-weight: 700;
     font-size: 20px;
     color: black !important;
+    text-align: center;
 }
 
 .subtitle{
@@ -411,6 +412,7 @@ a.chosen p{
 .isAn .button{
     color: white !important;
 }
+
 
 
 
