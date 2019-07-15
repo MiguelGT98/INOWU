@@ -47,7 +47,7 @@ $(document).ready(function () {
                 }
 
                 var answersString = $('.chosen p').text()
-                document.getElementById("price").innerHTML = price/20 + " DLL's"
+                document.getElementById("price").innerHTML = price/20 + " USD"
                 $("#answers").val(answersString)
                 $("#price2").val(price/20)
 
