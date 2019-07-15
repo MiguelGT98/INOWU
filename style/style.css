@@ -60,7 +60,7 @@ body {
     color: white;
     font-size: 18px;
     margin-top: 60px;
-    width: 16.25vw;
+    width: 13vw;
     font-weight: 700;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -413,6 +413,20 @@ a.chosen p{
     color: white !important;
 }
 
+footer{
+    height: 50px;
+    background-image: linear-gradient(-90deg, rgba(0, 58, 84, 1), rgba(0, 230, 190, 1));
+    position: static;
+    bottom: 0;
+}
+
+footer p{
+    line-height: 50px;
+    color: white;
+    margin-right: 20px;
+    text-align: right;
+}
+
 
 
 
@@ -509,7 +523,7 @@ a.chosen p{
     #promo-text {
         position: inherit;
         left: auto;
-        top: 20vh;
+        top: 10vh;
         width: 90%;
         min-width: 0;
         margin: 0 auto;
@@ -607,7 +621,5 @@ a.chosen p{
         line-height: 22px;
         float: left;
     }
-
-
 
 }

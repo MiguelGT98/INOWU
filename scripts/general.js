@@ -3,6 +3,8 @@ $(document).ready(function () {
     row('.sub a.col')
     row('.sub2 a.col')
     box('.sub3 a.col')
+    row('.sub3b a.col')
+
     row('.sub4 a.col')
     row('.sub5 a.col')
     row('.sub6 a.col')
@@ -148,8 +150,8 @@ if (window.innerWidth > 700) {
             let section = document.querySelector(link.hash);
 
             if (
-                section.offsetTop <= fromTop &&
-                section.offsetTop + section.offsetHeight > fromTop
+                section.offsetTop - 100 <= fromTop &&
+                section.offsetTop + section.offsetHeight - 100 > fromTop
             ) {
                 link.classList.add("current");
             } else {
