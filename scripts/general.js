@@ -37,7 +37,7 @@ $(document).ready(function() {
         var price = 0;
         for (var i = 0; i < stringPrice.length; i++) {
           if (stringPrice[i] == "+") {
-            price = price + parseInt(tempString)+"-";
+            price = price + parseInt(tempString);
             tempString = "";
           } else {
             tempString = tempString + stringPrice[i];
