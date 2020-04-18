@@ -37,7 +37,7 @@ $(document).ready(function() {
         var price = 0;
         for (var i = 0; i < stringPrice.length; i++) {
           if (stringPrice[i] == "+") {
-            price = price + parseInt(tempString);
+            price = price + parseInt(tempString)+"-";
             tempString = "";
           } else {
             tempString = tempString + stringPrice[i];
@@ -48,7 +48,7 @@ $(document).ready(function() {
         console.log(answersString)
         //document.getElementById("price").innerHTML = price / 20 + " USD";
         $("#answers").val(answersString);
-        //$("#price2").val(price / 20);
+        $("#price2").val(price / 20);
       } else {
         console.log($(".chosen").length);
         alert("There are some fields missing");
