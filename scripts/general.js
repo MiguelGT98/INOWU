@@ -45,9 +45,10 @@ $(document).ready(function() {
         }
 
         var answersString = $(".chosen p").text();
-        document.getElementById("price").innerHTML = price / 20 + " USD";
+        console.log(answersString)
+        //document.getElementById("price").innerHTML = price / 20 + " USD";
         $("#answers").val(answersString);
-        $("#price2").val(price / 20);
+        //$("#price2").val(price / 20);
       } else {
         console.log($(".chosen").length);
         alert("There are some fields missing");
